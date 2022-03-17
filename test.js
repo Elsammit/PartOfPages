@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 
@@ -8,7 +9,7 @@ app.use(express.static('./img'));
 
 app.get('/aaa',(req,res)=>{
     var rand = Math.floor( Math.random() * 3 ) ;
-
+    res.set({ 'Access-Control-Allow-Origin': '*' });
     res.send(String(rand));
 });
 

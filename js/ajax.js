@@ -7,7 +7,7 @@ var flg = true;
 function Do_repetition() {
  
     // urlを加工し、キャッシュされないurlにする。
-    url = "http://192.168.56.101:3000/aaa"
+    url = "http://192.168.2.136:3000/aaa"
  
     // ajaxオブジェクト生成
     var ajax = new XMLHttpRequest;
@@ -22,11 +22,11 @@ function Do_repetition() {
         var div = document.getElementById('testA');
 
         if(repos == "0"){
-            div.src = "makewani.png";
+            div.src = "../img/makewani.png";
         }else if(repos == "1"){
-            div.src="hamstar.png";
+            div.src="../img/hamstar.png";
         }else{
-            div.src="mogura.png";
+            div.src="../img/mogura.png";
         }
     };
  
