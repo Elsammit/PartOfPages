@@ -1,3 +1,4 @@
+// サーバーサイド側コード(nodejsで作成)
 
 const express = require('express');
 const app = express();

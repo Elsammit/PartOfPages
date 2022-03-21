@@ -33,9 +33,9 @@ function Do_repetition() {
     // ajax開始
     ajax.send(null);
 }
- 
+
+// 定期的にget requestを実行.
 window.addEventListener('load', function () {
- 
     setInterval(function () {
         Do_repetition();
     }, 500);
